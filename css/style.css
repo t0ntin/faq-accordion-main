@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+
+}
+
+html {
+  height: 100%;
+  font-family: "Lato", sans-serif;
+
+}
+
+body {
+  height: 100vh;
+  /* background-color: hsla(0, 0%, 0%, 0.925); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 33vh;
+  background-image: url(/assets/images/background-pattern-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+main { 
+  /* background-image: url(/assets/images/background-pattern-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  border: solid 5px gray;
+  /* width: 100vh; */
+  /* height: 100vh; */
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.faq-card-container {
+  /* background-image: url(/assets/images/background-pattern-desktop.svg); */
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  height: 67vh; /* fill the rest of the page */
+  background-color: black; /* or any color you like */
+
+}
+.faq-card {
+  border: solid 1px red;
+  width: 570px;
+  background-color: white;
+  padding: 20px;
+
+}
+.faq-header {
+  display: flex;
+  gap: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.question1, .question2, .question3, .question4 {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: hsl(292, 42%, 14%);
+  
+}
+
+.question1:hover, .question2:hover, .question3:hover, .question4:hover {
+
+  color: hsl(292, 16%, 49%);
+  
+}
