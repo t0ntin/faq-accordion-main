@@ -6,22 +6,17 @@ const question3El = document.querySelector('.question3');
 const answer3El = document.querySelector('.answer3');
 const question4El = document.querySelector('.question4');
 const answer4El = document.querySelector('.answer4');
-const iconEl = document.querySelector('.icon');
+const questionEls = document.querySelectorAll('.question');
 
+questionEls.forEach((questionEl) => {
+  const answerEl = questionEl.nextElementSibling;
+  const iconEl = questionEl.querySelector('.icon');
 
- question1El.addEventListener('click', () => {
-  const isVisible = answer1El.classList.toggle('visible')
-  iconEl.src = isVisible 
-    ? '/assets/images/icon-minus.svg' 
-    : '/assets/images/icon-plus.svg';
- });
+  questionEl.addEventListener('click', () => {
+    const isVisible = answerEl.classList.toggle('visible');
+    iconEl.src = isVisible
+      ? '/assets/images/icon-minus.svg'
+      : '/assets/images/icon-plus.svg';
+  });
+});
 
- question2El.addEventListener('click', () => {
-  answer2El.classList.toggle('visible');
- });
- question3El.addEventListener('click', () => {
-  answer3El.classList.toggle('visible');
- });
- question4El.addEventListener('click', () => {
-  answer4El.classList.toggle('visible');
- });
