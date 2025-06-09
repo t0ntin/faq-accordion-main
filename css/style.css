@@ -27,6 +27,9 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  background-color: #f7edca;
+
+
 }
 
 input, button, textarea, select {
@@ -63,43 +66,30 @@ a {
 }
 
 main { 
-  /* background-image: url(/assets/images/background-pattern-desktop.svg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
-  border: solid 5px gray;
-  /* width: 100vh; */
-  /* height: 100vh; */
-  /* background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
+
 }
 
 .faq-card-container {
-  /* background-image: url(/assets/images/background-pattern-desktop.svg); */
-  /* background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
 
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   height: 67vh; /* fill the rest of the page */
   background-color: black; /* or any color you like */
 
 }
 .faq-card {
-  border: solid 1px red;
+  /* border: solid 1px red; */
   min-width: 370px;
   max-width: 550px;
   background-color: white;
   padding: 20px;
+  border-radius: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 
 }
 .faq-header {
@@ -127,13 +117,13 @@ main {
 }
 
 .question1:hover, .question2:hover, .question3:hover, .question4:hover {
-
+  cursor: pointer;
   color: hsl(292, 16%, 49%);
 }
 
 .answer1, .answer2, .answer3, .answer4 {
   /* display: none; */
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   max-height: 0;
   opacity: 0;
   transition: max-height 0.3s ease, opacity 0.3s ease;
