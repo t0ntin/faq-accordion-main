@@ -6,9 +6,14 @@ const question3El = document.querySelector('.question3');
 const answer3El = document.querySelector('.answer3');
 const question4El = document.querySelector('.question4');
 const answer4El = document.querySelector('.answer4');
+const iconEl = document.querySelector('.icon');
+
 
  question1El.addEventListener('click', () => {
-  answer1El.classList.toggle('visible');
+  const isVisible = answer1El.classList.toggle('visible')
+  iconEl.src = isVisible 
+    ? '/assets/images/icon-minus.svg' 
+    : '/assets/images/icon-plus.svg';
  });
 
  question2El.addEventListener('click', () => {
@@ -20,3 +25,4 @@ const answer4El = document.querySelector('.answer4');
  question4El.addEventListener('click', () => {
   answer4El.classList.toggle('visible');
  });
+
