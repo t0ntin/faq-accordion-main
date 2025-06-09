@@ -25,4 +25,3 @@ const iconEl = document.querySelector('.icon');
  question4El.addEventListener('click', () => {
   answer4El.classList.toggle('visible');
  });
-

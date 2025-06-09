@@ -132,15 +132,19 @@ main {
 }
 
 .answer1, .answer2, .answer3, .answer4 {
-  display: none;
-
+  /* display: none; */
+  margin-bottom: 20px;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
 } 
 
 .visible {
-  display: block;
-
+  /* display: block; */
+  max-height: 30px;
+  opacity: 1;
 } 
 
 .icon {
-  
+
 }
