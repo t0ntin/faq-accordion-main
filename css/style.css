@@ -121,11 +121,19 @@ main {
   justify-content: space-between;
   gap: 10px;
   color: hsl(292, 42%, 14%);
-  
 }
 
 .question1:hover, .question2:hover, .question3:hover, .question4:hover {
 
   color: hsl(292, 16%, 49%);
-  
 }
+
+.answer1, .answer2, .answer3, .answer4 {
+  display: none;
+
+} 
+
+.visible {
+  display: block;
+
+} 
