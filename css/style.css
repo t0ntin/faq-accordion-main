@@ -96,7 +96,8 @@ main {
 }
 .faq-card {
   border: solid 1px red;
-  width: 570px;
+  min-width: 370px;
+  max-width: 550px;
   background-color: white;
   padding: 20px;
 
@@ -106,12 +107,14 @@ main {
   gap: 20px;
   font-size: 2.5rem;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .question-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  gap: 25px;
 }
 
 .question1, .question2, .question3, .question4 {
